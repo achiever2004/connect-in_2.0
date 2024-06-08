@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel try</title>
+    <link rel="stylesheet" href="./index.js">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="section2HE" style="display: block;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="navbar-brand d-flex flex-row">
+                <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg" alt=""
+                    width="50" height="50" class="d-inline-block align-text-top">
+                <div>
+                    <h4>Dhana</h4>
+                    <h6>250 Credits</h6>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#Intro">
+                        <h5>Home</h5>
+                    </a>
+                    <div onclick="display('section2_3')">
+                        <h5 class="nav-link">Employer</h5>
+                    </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CheckPost
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+                            <div onclick="display('section2_4')">
+                                <p class="dropdown-item"> Online</p>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div onclick="display('section2_5')">
+                                <p class="dropdown-item">Offline</p>
+                            </div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                </div>
+            </div>
+        </nav>
+
+        <div class="d-flex flex-row justify-content-between">
+            <div class="online">
+                <h2>Online Jobs</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <div onclick="display('section2_typing')">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://res.cloudinary.com/dmdiia2yv/image/upload/v1700321305/typing_vzfw7y.jpg"
+                                class="img3" />
+                        </div>
+                        <p class="pf"> Typing </p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-4">
+                    <div onclick="display('section2_videoeditor')">
+                    <div class="d-flex flex-row justify-content-center">
+                        <img src="https://res.cloudinary.com/dmdiia2yv/image/upload/v1700379599/video_editor_hhbnep.jpg"
+                            class="img3" />
+                    </div>
+                    <p class="pf"> Video Editor </p>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <!-- <div onclick="display('section2')"> -->
+                    <div class="d-flex flex-row justify-content-center">
+                        <img src="https://res.cloudinary.com/ds7dqfb1n/image/upload/v1714124456/writing_pic_lxltes.jpg"
+                            class="img3" />
+                    </div>
+                    <p class="pf"> Writing </p>
+                    <!-- </div> -->
+                </div>
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <!-- <div onclick="display('section2')"> -->
+                    <div class="d-flex flex-row justify-content-center">
+                        <img src="https://res.cloudinary.com/ds7dqfb1n/image/upload/v1714124645/ppt.pic_wzfea2.webp"
+                            class="img3" />
+                    </div>
+                    <p class="pf"> PPT Creation </p>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="online">
+            <h2>Offline Jobs</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <!-- <div onclick="display('section2')"> -->
+                    <div class="d-flex flex-row justify-content-center">
+                        <img src="https://res.cloudinary.com/dmdiia2yv/image/upload/v1700379588/tutor_vetwpz.jpg"
+                            class="img3" />
+                    </div>
+                    <p class="pf"> Tutor </p>
+                    <!-- </div> -->
+                </div>
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <!-- <div onclick="display('section2')"> -->
+                    <div class="d-flex flex-row justify-content-center">
+                        <img src="https://res.cloudinary.com/ds7dqfb1n/image/upload/v1714127591/event.pic1_j0rcjx.jpg"
+                            class="img3" />
+                    </div>
+                    <p class="pf"> Local Event Helper </p>
+                    <!-- </div> -->
+                </div>
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <!-- <div onclick="display('section2')"> -->
+                    <div class="d-flex flex-row justify-content-center">
+                        <img src="https://res.cloudinary.com/dmdiia2yv/image/upload/v1700373776/delivery_j3eapc.jpg"
+                            class="img3" />
+                    </div>
+                    <p class="pf"> Delivery </p>
+                    <!-- </div> -->
+                </div>
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <div onclick="display('section2')">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://res.cloudinary.com/ds7dqfb1n/image/upload/v1714127949/grocery_ljqec5.webp"
+                                class="img3" />
+                        </div>
+                        <p class="pf"> Grocery Shopper </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <h3>Clients FeedBacks</h3>
+            <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                    <div class="carousel-item col-md-3  active">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail box">
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                            alt="" class="userimage" width="35" height="35">
+                                        <p class="space">User name1</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1" class="feedbacks2_0">FeedBacks </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail box">
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                            alt="" class="userimage" width="35" height="35">
+                                        <p class="space">User name2</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1" class="feedbacks2_0">FeedBacks </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail box">
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                            alt="" class="userimage" width="35" height="35">
+                                        <p class="space">User name3</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1" class="feedbacks2_0">FeedBacks </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail box">
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                            alt="" class="userimage" width="35" height="35">
+                                        <p class="space">User name4</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1" class="feedbacks2_0">FeedBacks </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail box">
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                            alt="" class="userimage" width="35" height="35">
+                                        <p class="space">User name5</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1" class="feedbacks2_0">FeedBacks </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail box">
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                            alt="" class="userimage" width="35" height="35">
+                                        <p class="space">User name6</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1" class="feedbacks2_0">FeedBacks </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 8" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=7"
+                                        alt="slide 7">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3  ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 2" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=8"
+                                        alt="slide 8">
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+
+    <div id="section2_3">
+        <div class="container-fluid">
+            <h3>Clients FeedBacks</h3>
+            <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                    <div class="carousel-item col-md-3  active">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail box">
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                            alt="" class="userimage" width="35" height="35">
+                                        <p class="space">User name1</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1" class="feedbacks2_0">FeedBacks </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail box">
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                            alt="" class="userimage" width="35" height="35">
+                                        <p class="space">User name2</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1" class="feedbacks2_0">FeedBacks </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail box">
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                            alt="" class="userimage" width="35" height="35">
+                                        <p class="space">User name3</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1" class="feedbacks2_0">FeedBacks </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail box">
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                            alt="" class="userimage" width="35" height="35">
+                                        <p class="space">User name4</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1" class="feedbacks2_0">FeedBacks </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail box">
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                            alt="" class="userimage" width="35" height="35">
+                                        <p class="space">User name5</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1" class="feedbacks2_0">FeedBacks </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail box">
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                            alt="" class="userimage" width="35" height="35">
+                                        <p class="space">User name6</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1" class="feedbacks2_0">FeedBacks </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 8" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=7"
+                                        alt="slide 7">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3  ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 2" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=8"
+                                        alt="slide 8">
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div onclick="display('section2HE')" class="d-flex flex-row justify-content-center">
+            <button>Go back</button>
+        </div>
+    </div>
+    <div id="section2_4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="navbar-brand d-flex flex-row">
+                <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg" alt=""
+                    width="50" height="50" class="d-inline-block align-text-top">
+                <div>
+                    <h4>Dhana</h4>
+                    <h6>250 Credits</h6>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#Intro">
+                        <h5>Home</h5>
+                    </a>
+                    <div onclick="display('section2_3')">
+                        <h5 class="nav-link">Employer</h5>
+                    </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CheckPost
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+                            <div onclick="display('section2_4')">
+                                <p class="dropdown-item"> Online</p>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div onclick="display('section2_5')">
+                                <p class="dropdown-item">Offline</p>
+                            </div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex flex-row justify-content-between">
+            <div class="online">
+                <h2>Online Jobs</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <div onclick="display('section2_typing')">
+                    <div class="d-flex flex-row justify-content-center">
+                        <img src="https://res.cloudinary.com/dmdiia2yv/image/upload/v1700321305/typing_vzfw7y.jpg"
+                            class="img3" />
+                    </div>
+                    <p class="pf"> Typing </p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-4">
+                    <div onclick="display('section2_videoeditor')">
+                    <div class="d-flex flex-row justify-content-center">
+                        <img src="https://res.cloudinary.com/dmdiia2yv/image/upload/v1700379599/video_editor_hhbnep.jpg"
+                            class="img3" />
+                    </div>
+                    <p class="pf"> Video Editor </p>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <!-- <div onclick="display('section2')"> -->
+                    <div class="d-flex flex-row justify-content-center">
+                        <img src="https://res.cloudinary.com/ds7dqfb1n/image/upload/v1714124456/writing_pic_lxltes.jpg"
+                            class="img3" />
+                    </div>
+                    <p class="pf"> Writing </p>
+                    <!-- </div> -->
+                </div>
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <!-- <div onclick="display('section2')"> -->
+                    <div class="d-flex flex-row justify-content-center">
+                        <img src="https://res.cloudinary.com/ds7dqfb1n/image/upload/v1714124645/ppt.pic_wzfea2.webp"
+                            class="img3" />
+                    </div>
+                    <p class="pf"> PPT Creation </p>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+        <div onclick="display('section2HE')" class="d-flex flex-row justify-content-center">
+            <button>Go back</button>
+        </div>
+    </div>
+    <div id="section2_5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="navbar-brand d-flex flex-row">
+                <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg" alt=""
+                    width="50" height="50" class="d-inline-block align-text-top">
+                <div>
+                    <h4>Dhana</h4>
+                    <h6>250 Credits</h6>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#Intro">
+                        <h5>Home</h5>
+                    </a>
+                    <div onclick="display('section2_3')">
+                        <h5 class="nav-link">Employer</h5>
+                    </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CheckPost
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+                            <div onclick="display('section2_4')">
+                                <p class="dropdown-item"> Online</p>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div onclick="display('section2_5')">
+                                <p class="dropdown-item">Offline</p>
+                            </div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                </div>
+            </div>
+        </nav>
+        <div class="online">
+            <h2>Offline Jobs</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <!-- <div onclick="display('section2')"> -->
+                    <div class="d-flex flex-row justify-content-center">
+                        <img src="https://res.cloudinary.com/dmdiia2yv/image/upload/v1700379588/tutor_vetwpz.jpg"
+                            class="img3" />
+                    </div>
+                    <p class="pf"> Tutor </p>
+                    <!-- </div> -->
+                </div>
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <!-- <div onclick="display('section2')"> -->
+                    <div class="d-flex flex-row justify-content-center">
+                        <img src="https://res.cloudinary.com/ds7dqfb1n/image/upload/v1714127591/event.pic1_j0rcjx.jpg"
+                            class="img3" />
+                    </div>
+                    <p class="pf"> Local Event Helper </p>
+                    <!-- </div> -->
+                </div>
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <!-- <div onclick="display('section2')"> -->
+                    <div class="d-flex flex-row justify-content-center">
+                        <img src="https://res.cloudinary.com/dmdiia2yv/image/upload/v1700373776/delivery_j3eapc.jpg"
+                            class="img3" />
+                    </div>
+                    <p class="pf"> Delivery </p>
+                    <!-- </div> -->
+                </div>
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <div onclick="display('section2')">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://res.cloudinary.com/ds7dqfb1n/image/upload/v1714127949/grocery_ljqec5.webp"
+                                class="img3" />
+                        </div>
+                        <p class="pf"> Grocery Shopper </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div onclick="display('section2HE')" class="d-flex flex-row justify-content-center">
+            <button>Go back</button>
+        </div>
+    </div>
+    <div id="section2_typing">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="navbar-brand d-flex flex-row">
+                <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg" alt=""
+                    width="50" height="50" class="d-inline-block align-text-top">
+                <div>
+                    <h4>Dhana</h4>
+                    <h6>250 Credits</h6>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#Intro">
+                        <h5>Home</h5>
+                    </a>
+                    <div onclick="display('section2_3')">
+                        <h5 class="nav-link">Employer</h5>
+                    </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CheckPost
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+                            <div onclick="display('section2_4')">
+                                <p class="dropdown-item"> Online</p>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div onclick="display('section2_5')">
+                                <p class="dropdown-item">Offline</p>
+                            </div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card box_job_description_1">
+                        <div class="card-body">
+                            <h5 class="card-title">Typing</h5>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <h6>Duration : </h6>
+                            <h6>Employee Count : </h6>
+                            <h6>Price: </h6>
+                            <a href="#" class="btn btn-primary">Save</a>
+                            <a href="#" class="btn btn-primary">BID</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card box_job_description_2">
+                        <div class="card-body">
+                            <div class="d-flex flex-row">
+                                <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                    alt="" class="userimage" width="35" height="35">
+                                <p class="employee_name_space">Employer name</p>
+                            </div>
+                            <h6>No of jobs:</h6>
+                            <h6>min :</h6>
+                            <h6>Avg :</h6>
+                            <h6>Max :</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="display('section2HE')" class="d-flex flex-row justify-content-center">
+                <button>Go back</button>
+            </div>
+        </div>
+    </div>
+    <div id="section2_videoeditor">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="navbar-brand d-flex flex-row">
+                <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg" alt=""
+                    width="50" height="50" class="d-inline-block align-text-top">
+                <div>
+                    <h4>Dhana</h4>
+                    <h6>250 Credits</h6>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#Intro">
+                        <h5>Home</h5>
+                    </a>
+                    <div onclick="display('section2_3')">
+                        <h5 class="nav-link">Employer</h5>
+                    </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CheckPost
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+                            <div onclick="display('section2_4')">
+                                <p class="dropdown-item"> Online</p>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div onclick="display('section2_5')">
+                                <p class="dropdown-item">Offline</p>
+                            </div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card box_job_description_1">
+                        <div class="card-body">
+                            <h5 class="card-title">Video editor</h5>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <h6>Duration : </h6>
+                            <h6>Employee Count : </h6>
+                            <h6>Price: </h6>
+                            <a href="#" class="btn btn-primary">Save</a>
+                            <a href="#" class="btn btn-primary button_space">BID</a>
+                            <!-- here space is not working -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card box_job_description_2">
+                        <div class="card-body">
+                            <div class="d-flex flex-row">
+                                <img src="https://res.cloudinary.com/do6twjc6g/image/upload/v1709136511/person_prwrix.jpg"
+                                    alt="" class="userimage" width="35" height="35">
+                                <p class="employee_name_space">Employer name</p>
+                            </div>
+                            <h6>No of jobs:</h6>
+                            <h6>min :</h6>
+                            <h6>Avg :</h6>
+                            <h6>Max :</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="display('section2HE')" class="d-flex flex-row justify-content-center">
+                <button>Go back</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript"
+        src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+</body>
+
+</html>
